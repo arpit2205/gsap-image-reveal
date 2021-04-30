@@ -1,0 +1,45 @@
+.container {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  width: 100%;
+  // height: 100%;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+}
+
+.image-container-inner {
+  width: 100vw;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 600px) {
+    height: 240px;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.text-container {
+  padding: 10vh 10vw;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400 !important;
+}
